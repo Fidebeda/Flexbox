@@ -1,0 +1,79 @@
+*,*:before,*:after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    /* outline: 1px solid blue; */
+}
+
+
+html, body{
+    height: 100vh;
+    
+}
+
+body{
+    color: white;
+    font: 25px Arial, serif;
+    font-weight: bold;
+    background: pink;
+    /* padding: 1em; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+article{
+    width: 50%;
+    padding: 1em;
+    margin: .5em;
+    border-radius: .5em;
+    background: green;
+}
+
+article:nth-child(1){background-color: grey;}
+article:nth-child(2){background-color: red;}
+article:nth-child(3){background-color: purple;}
+article:nth-child(4){background-color: green;}
+article:nth-child(5){background-color: goldenrod;}
+article:nth-child(6){background-color: blueviolet;}
+article:nth-child(7){background-color: wheat;}
+
+
+.inputs{
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+input{
+    background-color: pink;
+    margin: 1em;
+    width: 150%;
+    /* outline: 0; */
+    text-decoration: none;
+    line-height: 2em;
+    font-weight: bold;
+    font-size: .9em;
+    border: 0px solid red;
+    border-bottom: 1px solid black;
+
+}
+
+.second-input{
+    font-weight: normal;
+}
+
+/* input{
+    border: none;
+    background-color: pink;
+    width: 50%;
+    margin-top: 2em;
+    text-decoration: none;
+
+} */

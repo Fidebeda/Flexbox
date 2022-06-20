@@ -1,0 +1,33 @@
+*,*:before,*:after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    /* outline: 1px solid blue; */
+}
+
+
+html, body{
+    height: 100%;
+    background-color: aquamarine;
+    
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    
+    flex-wrap: wrap;
+    width: 10%;
+    
+}
+
+
+
+
+
+article:nth-child(1){flex-grow:1;background-color:  aqua;}
+article:nth-child(2){flex-grow:2;background-color: red;}
+article:nth-child(3){flex-grow:1;background-color: orange}
+article:nth-child(4){background-color: green;}
+
+

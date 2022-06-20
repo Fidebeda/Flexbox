@@ -1,0 +1,101 @@
+*,*:before,*:after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    /* outline: 1px solid blue; */
+}
+
+html,body{
+    height: 100%;
+}
+
+
+body{
+    color: white;
+    font: 25px Arial, serif;
+    font-weight: bold;
+    background-color: grey;
+    /* padding: 1em; */
+}
+
+body, a{
+    color: white;
+}
+
+ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+article, aside, header, nav, footer{
+    padding: 1em;
+    /* border-radius: .5em; */
+    /* margin: 5px; */
+}
+
+main{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+main > * {
+    flex: 1;
+}
+
+nav{
+    order: 1;
+}
+
+article{
+    order: 2;
+    flex: 3;
+}
+
+aside{
+    order: 3;
+}
+
+header{background-color: rgb(77, 194, 26);}
+nav{background-color: rgb(67, 17, 58);}
+article{background-color: aquamarine;}
+aside{background-color: rgb(53, 45, 141);}
+footer{background-color: rgb(197, 203, 23);}
+
+
+/* header{
+    height: 20%;
+}
+
+main{
+    height: 60%;
+}
+
+footer{
+    height: 20%;
+} */
+
+
+@media screen and (max-width:900px) {
+    article{
+        order: 1;
+        flex: 1 100%;
+    }
+
+    nav{
+        order: 2;
+    }
+
+    aside{
+        order: 3;
+    }
+
+}
+
+
+@media  screen and (max-width: 600px){
+    main{
+        flex-direction: column;
+    }
+
+}
+    
